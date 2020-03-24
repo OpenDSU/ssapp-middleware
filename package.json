@@ -1,5 +1,5 @@
 {
-  "name": "ssapp-middeware",
+  "name": "ssapp-middleware",
   "version": "0.3.0",
   "description": "Self Sovereign Application Middleware used by Service Workers",
   "main": "index.js",
