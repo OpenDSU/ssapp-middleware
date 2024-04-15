@@ -13,7 +13,7 @@ assert.callback('Middleware simple path matching', (done) => {
     });
     const response = utils.createResponse();
 
-    server.use('/test', (req, res) => {
+    server.use('/test', () => {
         done();
     })
     server.executeRequest(request, response);

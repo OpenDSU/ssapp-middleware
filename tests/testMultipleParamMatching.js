@@ -13,7 +13,7 @@ assert.callback('Middleware multiple param matching', (done) => {
     });
     const response = utils.createResponse();
 
-    server.use('/test/:param1/:param2', (req, res) => {
+    server.use('/test/:param1/:param2', (req) => {
         assert.objectHasFields(req.params, {
             param1: 'value',
             param2: 'second-value'

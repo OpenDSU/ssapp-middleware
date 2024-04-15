@@ -13,7 +13,7 @@ assert.callback('Middleware single param matching', (done) => {
     });
     const response = utils.createResponse();
 
-    server.use('/test/:param1', (req, res) => {
+    server.use('/test/:param1', (req) => {
         assert.objectHasFields(req.params, {
             param1: 'value'
         });
